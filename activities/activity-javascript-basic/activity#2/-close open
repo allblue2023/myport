@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Button</title>
+</head>
 <body>
-<h1>Tubig Delivery Sales:</h1>
 
-<p id="sales1"></p>
-<p id="sales2"></p>
-<p id="sales3"></p>
-
-
-
-<script>
-//containers delivered//
-let customer1 = 5; 
-let customer2 = 10;
-let customer3 = 20;
-
-//containers delivered times price//
-let result1 = myFunction(customer1, 30);
-document.getElementById("sales1").innerHTML = "Customer1: " + result1 + "pesos";
-
-let result2 = myFunction(customer2, 30);
-document.getElementById("sales2").innerHTML = "Customer2: " + result2 + "pesos";
-
-let result3 = myFunction(customer3, 30);
-document.getElementById("sales3").innerHTML = "Customer3: " + result3 + "pesos";
-
-function myFunction(p1, p2) {
-  return p1 * p2;
-}
-</script>
-
+ <button id="Toggle-Button">Open</button>
+  
+  <script>
+    document.getElementById("Toggle-Button").addEventListener(
+  "click",
+  function(event) {
+    if (event.target.innerText === "Open") {
+      event.target.innerText = "Close";
+    } else {
+      event.target.innerText = "Open";
+    }
+  },
+  false
+);
+  </script>
 </body>
 </html>
