@@ -19,7 +19,7 @@ function myFunction() {
 var A = Number(document.getElementById("Num1-input").value);
 var B = Number(document.getElementById("Num2-input").value);
 var sum = A + B;
-  alert("The sum of 1 and 2 is " + sum + ".");
+  alert(`The sum of ${A} and ${B} is ${sum}.`);
 }
 </script>
 
