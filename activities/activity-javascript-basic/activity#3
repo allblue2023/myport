@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Number Sum</title>
+</head>
+<body>
+<label for="Num1-input">Number 1:</label>
+<input type="number" id="Num1-input"><br> 
 
+<label for="Num2-input">Number 2:</label>
+<input type="number" id="Num2-input"><br> 
+
+<button onclick="myFunction()">Calculate Sum</button>
+
+<script>
+
+function myFunction() {
+var A = Number(document.getElementById("Num1-input").value);
+var B = Number(document.getElementById("Num2-input").value);
+var sum = A + B;
+  alert("The sum of 1 and 2 is " + sum + ".");
+}
+</script>
+
+</body>
+</html>
