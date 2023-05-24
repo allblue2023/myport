@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <title>Name Display</title>
+</head>
 <body>
-<h1>Tubig Delivery Sales:</h1>
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput">
+  <button onclick="callFunction()">Submit</button>
+    <div id="message"></div>
+  
+  <script>
+    function callFunction() {
+        let nameInput = document.querySelector("#nameInput");
+        let displayMsg = document.querySelector("#message");
 
-<p id="sales1"></p>
-<p id="sales2"></p>
-<p id="sales3"></p>
+        message.innerHTML = "Hello: " + nameInput.value;
+    }
+    
 
-
-
-<script>
-//containers delivered//
-let customer1 = 5; 
-let customer2 = 10;
-let customer3 = 20;
-
-//containers delivered times price//
-let result1 = myFunction(customer1, 30);
-document.getElementById("sales1").innerHTML = "Customer1: " + result1 + "pesos";
-
-let result2 = myFunction(customer2, 30);
-document.getElementById("sales2").innerHTML = "Customer2: " + result2 + "pesos";
-
-let result3 = myFunction(customer3, 30);
-document.getElementById("sales3").innerHTML = "Customer3: " + result3 + "pesos";
-
-function myFunction(p1, p2) {
-  return p1 * p2;
-}
-</script>
-
+  </script>
 </body>
 </html>
