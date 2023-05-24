@@ -6,19 +6,17 @@
 </head>
 <body>
   <label for="nameInput">Enter your name:</label>
-  <input type="text" id="nameInput">
-  <button onclick="callFunction()">Submit</button>
-    <div id="message"></div>
+  <input type="text" id="nameInput" onkeyup="callFunction()">
   
+  <div id="display">Hello</div>
   <script>
-    function callFunction() {
-        let nameInput = document.querySelector("#nameInput");
-        let displayMsg = document.querySelector("#message");
-
-        message.innerHTML = "Hello: " + nameInput.value;
+    function callFunction() 
+    {
+        let Input = document.getElementById("nameInput").value;
+        
+        display.innerHTML = "Hello " + Input;
     }
     
-
   </script>
 </body>
 </html>
